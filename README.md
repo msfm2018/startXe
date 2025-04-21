@@ -11,3 +11,7 @@
 
 
 实用性：专注于“常用但易忘”的资源。
+
+
+#### 应用截图
+![image](https://github.com/msfm2018/startXe/tree/v0.1/index.png)
