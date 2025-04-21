@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\空了改成c#代码\wpfapp\WpfApp0\bin\Release\net8.0-windows\publish\WpfApp1.exe
+C:\Users\Administrator\Desktop\空了改成c#代码\wpfapp\WpfApp0\bin\Release\net8.0-windows\publish\WpfApp1.dll
+C:\Users\Administrator\Desktop\空了改成c#代码\wpfapp\WpfApp0\bin\Release\net8.0-windows\publish\WpfApp1.deps.json
+C:\Users\Administrator\Desktop\空了改成c#代码\wpfapp\WpfApp0\bin\Release\net8.0-windows\publish\WpfApp1.runtimeconfig.json
+C:\Users\Administrator\Desktop\空了改成c#代码\wpfapp\WpfApp0\bin\Release\net8.0-windows\publish\WpfApp1.pdb

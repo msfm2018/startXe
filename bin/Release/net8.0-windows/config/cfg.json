@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "startx": {
+      "imagefilename": "Start Button.png",
+      "path": "startx",
+      "tooltip": "\u5F00\u59CB\u83DC\u5355"
+    },
+    "Acrobat": {
+      "imagefilename": "Acrobat.png",
+      "path": "https://baidu.com",
+      "tooltip": "\u4EC0\u4E48"
+    },
+    "a1": {
+      "imagefilename": "a1.png",
+      "path": "https://qq.com",
+      "tooltip": "\u641C\u7D22\u554A1"
+    },
+    "3dweather": {
+      "imagefilename": "3dweather.png",
+      "path": "https://baidu.com",
+      "tooltip": "3dweather"
+    }
+  },
+  "config": {
+    "debug": "false",
+    "web3d": "false",
+    "backgroundImagePath": "bg.jpg",
+    "layout": "left",
+    "nodesize": 68,
+    "translator": "https://fanyi.sogou.com",
+    "shortcut": "C:\\QQ\\Bin\\QQScLauncher.exe",
+    "style": "style-1",
+    "definestart": "true",
+    "left": "799",
+    "top": "-113.38582677165354"
+  },
+  "exclusion": {
+    "value": "TextInputHost.exe,ApplicationFrameHost.exe,WinBarOS.exe,SystemSettings.exe"
+  }
+}

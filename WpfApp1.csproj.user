@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Administrator\Desktop\空了改成c#代码\wpfapp\WpfApp0\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="src\IconEditDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\LaunchSimulator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\leftform.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\setform.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

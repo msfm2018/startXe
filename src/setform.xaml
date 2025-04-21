@@ -1,0 +1,117 @@
+﻿<Window x:Class="WpfApp1.setform"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:fa="http://schemas.fontawesome.io/icons/"
+        Title="设置管理器"
+        Width="820" Height="900"
+        WindowStyle="None"
+        AllowsTransparency="False"
+        Background="#FFEEEEEE"
+        ResizeMode="NoResize"
+        AllowDrop="True" Drop="Window_Drop" DragOver="Window_DragOver"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style x:Key="WrapPanelStyle" TargetType="WrapPanel">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+
+
+    <Border  Background="#F5F5F5F5">
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="5" BlurRadius="10" Opacity="0.3"/>
+        </Border.Effect>
+
+        <Grid Margin="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="0" Background="#F5F5F5F5" MouseDown="TitleBar_MouseDown">
+                <TextBlock Text="设置管理器" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                <Button Content="×" Width="30" Height="30" HorizontalAlignment="Right" Margin="0,5,5,0"
+                        Click="CloseButton_Click"
+                        Background="Transparent" BorderBrush="Transparent" FontSize="14" Foreground="DarkGray"/>
+            </Grid>
+
+            <Border Grid.Row="1" BorderThickness="1" BorderBrush="#CCC" CornerRadius="6"  Background="#f5f5f5f5" Padding="5">
+                <DataGrid x:Name="SettingsGrid" AutoGenerateColumns="False" IsReadOnly="True"
+                          HeadersVisibility="Column"
+                          AlternatingRowBackground="#FAFAFA"
+                          SelectionMode="Single" SelectionUnit="FullRow"
+                          MouseLeftButtonUp="SettingsGrid_MouseLeftButtonUp"
+                          MouseDoubleClick="SettingsGrid_MouseDoubleClick"
+                          FontSize="14">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Key" Binding="{Binding Key}" Width="150"/>
+                        <DataGridTextColumn Header="图标" Binding="{Binding Value.ImageFilename}" Width="200"/>
+                        <DataGridTextColumn Header="应用" Binding="{Binding Value.Path}" Width="460"/>
+                        <DataGridTextColumn Header="提示词" Binding="{Binding Value.Tooltip}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+
+
+            <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,10,0,0" Background="White">
+
+                <Grid Margin="0,0,0,10" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="应用" VerticalAlignment="Center" Margin="6,0,0,0" Width="43" Grid.Column="0"/>
+                    <TextBox x:Name="PathPrefixBox" Height="28" Margin="5,0,0,0" Grid.Column="1"   HorizontalAlignment="Stretch" MouseDoubleClick="PathPrefixBox_MouseDoubleClick"/>
+                </Grid>
+
+
+                <Grid Margin="0,0,0,10" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="提示词" VerticalAlignment="Center" Margin="6,0,0,0" Width="40" Grid.Column="0"/>
+                    <TextBox x:Name="TooltipBox" Height="28" Margin="5,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch"/>
+                </Grid>
+
+                <Grid Margin="0,0,0,10" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="图标" VerticalAlignment="Center" Margin="6,0,0,0" Width="40" Grid.Column="0"/>
+                    <TextBox x:Name="ImageBox" Height="28" Margin="5,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch"  MouseDoubleClick="BrowseImage_Click"/>
+                    <Image x:Name="ImagePreview" Width="40" Height="40" Margin="10,0,0,0" Stretch="Uniform" Grid.Column="2"/>
+                </Grid>
+
+                <WrapPanel Margin="0,0,0,10" HorizontalAlignment="Center" Style="{StaticResource WrapPanelStyle}"  Background="#f5f5f5f5">
+                    <WrapPanel 	HorizontalAlignment="Center">
+                        <Button Content="添加/更新" Click="AddOrUpdate_Click" Width="100" Height="32" Margin="5" Background="#007ACC" Foreground="White"/>
+                        <Button Content="删除" Click="Delete_Click" Width="80" Height="32" Margin="5" Background="#E81123" Foreground="White"/>
+                        <Button Content="刷新" Click="Refresh_Click" Width="80" Height="32" Margin="5"/>
+                        <Button Content="打开图标文件夹" Width="100" Margin="5" Height="32" Click="OpenImgFolder_Click"/>
+                    </WrapPanel>
+                </WrapPanel>
+
+                <GroupBox Header="启动顺序预览" Margin="0,10,0,0" FontWeight="Bold"  Background="#f5f5f5f5">
+                    <ScrollViewer Height="140">
+
+                        <WrapPanel x:Name="PreviewPanel" Margin="10" IsItemsHost="False" AllowDrop="True"  Drop="PreviewPanel_Drop" DragOver="PreviewPanel_DragOver"/>
+                    </ScrollViewer>
+                </GroupBox>
+            </StackPanel>
+        </Grid>
+
+    </Border>
+
+
+</Window>
