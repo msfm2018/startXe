@@ -14,4 +14,4 @@
 
 
 #### 应用截图
-![image](https://github.com/msfm2018/startXe/tree/v0.1/index.png)
+![image](https://github.com/msfm2018/startXe/blob/v0.1/index.png)
