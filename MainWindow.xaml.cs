@@ -29,6 +29,8 @@ namespace WpfApp
 
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern bool AllocConsole();
+        private static Mutex? _mutex; 
+        private const string AppGuid = "{B67E1095-E332-4102-AB9B-0005981471E0}"; // 替换为你唯一的 GUID
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -60,6 +62,13 @@ namespace WpfApp
 
         public MainWindow()
         {
+            _mutex = new Mutex(false, $"Global\\{AppGuid}");
+
+            if (!_mutex.WaitOne(TimeSpan.Zero, true))
+            {
+                Environment.Exit(0); // 关闭当前实例
+            }
+
             InitializeComponent();
 
             this.ShowInTaskbar = false;

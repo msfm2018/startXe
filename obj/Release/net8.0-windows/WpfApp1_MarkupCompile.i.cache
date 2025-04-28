@@ -1,5 +1,5 @@
 ﻿WpfApp1
-
+1.0.0.0
 
 winexe
 C#
@@ -8,11 +8,11 @@ C:\Users\Administrator\Desktop\55\startXe\obj\Release\net8.0-windows\
 WpfApp1
 none
 false
-TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Administrator\Desktop\55\startXe\App.xaml
 61654823521
 
-121218040743
+14-1365866408
 199-1074408475
 MainWindow.xaml;src\IconEditDialog.xaml;src\LaunchSimulator.xaml;src\leftform.xaml;src\setform.xaml;src\Theme.xaml;
 

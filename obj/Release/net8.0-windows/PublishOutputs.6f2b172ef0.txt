@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\55\startXe\bin\Release\net8.0-windows\publish\WpfApp1.exe
+C:\Users\Administrator\Desktop\55\startXe\bin\Release\net8.0-windows\publish\WpfApp1.dll
+C:\Users\Administrator\Desktop\55\startXe\bin\Release\net8.0-windows\publish\WpfApp1.deps.json
+C:\Users\Administrator\Desktop\55\startXe\bin\Release\net8.0-windows\publish\WpfApp1.runtimeconfig.json
+C:\Users\Administrator\Desktop\55\startXe\bin\Release\net8.0-windows\publish\WpfApp1.pdb
+C:\Users\Administrator\Desktop\55\startXe\bin\Release\net8.0-windows\publish\FontAwesome.WPF.dll

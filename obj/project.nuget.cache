@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8MI1eVnv9EU=",
+  "dgSpecHash": "Qrn5cz7UrtI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\空了改成c#代码\\wpfapp\\WpfApp0\\WpfApp1.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\55\\startXe\\WpfApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512"
   ],

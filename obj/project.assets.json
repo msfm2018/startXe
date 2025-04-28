@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\空了改成c#代码\\wpfapp\\WpfApp0\\WpfApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\55\\startXe\\WpfApp1.csproj",
       "projectName": "WpfApp1",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\空了改成c#代码\\wpfapp\\WpfApp0\\WpfApp1.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\55\\startXe\\WpfApp1.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\空了改成c#代码\\wpfapp\\WpfApp0\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\55\\startXe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -73,7 +73,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
